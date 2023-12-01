@@ -51,9 +51,13 @@ const tweets = [
     }
 ]
 
-app.get("/author/tweet", (req, res) => { 
-res.send(tweets)
-})
+// app.get("/author/tweet", (req, res) => { 
+// res.send(tweets)
+// })
+
+app.get("/tweets/", (req, res) => { 
+    res.send(tweets)
+    })
 
 //         port number
 // don't use random numbers 
